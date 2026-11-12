@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cours particuliers de maths à Valence | Clément Péalat, professeur agrégé</title>
+  <meta name="description" content="Cours particuliers de mathématiques à Étoile-sur-Rhône, Valence et alentours, du collège au supérieur. Professeur agrégé, docteur en mathématiques-informatique. Cours à domicile, en visioconférence ou chez l'élève.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Clément Péalat">
+  <meta name="theme-color" content="#1e3a5f">
+  <link rel="icon" type="image/png" href="/logo.png">
+
+  <link rel="canonical" href="https://maths-valence.fr/">
+  <meta property="og:url" content="https://maths-valence.fr/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Cours particuliers de maths à Valence | Clément Péalat">
+  <meta property="og:description" content="Professeur agrégé et docteur en mathématiques-informatique. Cours du collège au supérieur à Étoile-sur-Rhône, Valence et alentours.">
+  <meta property="og:image" content="https://maths-valence.fr/logo.png">
+  <meta property="og:image:alt" content="Maths Valence - Cours particuliers de mathématiques">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Clément Péalat, professeur agrégé de mathématiques">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Clément Péalat",
+    "jobTitle": "Professeur agrégé de mathématiques",
+    "description": "Professeur agrégé, docteur en mathématiques et informatique et ingénieur diplômé de l'École Centrale de Lille, proposant des cours particuliers de mathématiques du collège au supérieur.",
+    "email": "mailto:clement.pealat@gmail.com",
+    "telephone": "+33676356112",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Étoile-sur-Rhône",
+      "addressCountry": "FR"
+    },
+    "knowsAbout": [
+      "Mathématiques",
+      "Analyse",
+      "Python",
+      "Java",
+      "Intelligence artificielle",
+      "Machine learning",
+      "Géométrie riemannienne"
+    ],
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "École Centrale de Lille"},
+      {"@type": "CollegeOrUniversity", "name": "INSA Lyon"}
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --navy:#1e3a5f;
+      --teal:#2a9d8f;
+      --teal-dark:#23867b;
+      --ink:#222;
+      --muted:#5d6670;
+      --soft:#f5f7fb;
+      --soft-green:#eef8f5;
+      --white:#fff;
+      --shadow:0 4px 18px rgba(0,0,0,.08);
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:var(--white);
+      color:var(--ink);
+      line-height:1.7;
+    }
+    body::before{
+      content:"∞   ∑   π   ∫   √   eˣ";
+      position:fixed;inset:0;
+      font-size:140px;
+      color:rgba(30,58,95,.04);
+      display:flex;align-items:center;justify-content:center;
+      transform:rotate(-20deg);
+      pointer-events:none;z-index:-1;
+    }
+    a{color:inherit}
+    .skip-link{
+      position:absolute;left:-9999px;top:0;
+      background:#fff;color:#000;padding:10px;z-index:100;
+    }
+    .skip-link:focus{left:10px;top:10px}
+
+    header{
+      background:linear-gradient(135deg,var(--navy),var(--teal));
+      color:#fff;text-align:center;padding:58px 20px 52px;
+    }
+    .logo-img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    }
+    header h1{font-size:clamp(2rem,6vw,3rem);margin-bottom:8px}
+    .hero-title{font-size:clamp(1.15rem,3vw,1.5rem);font-weight:600;margin-bottom:8px}
+    .subtitle{font-size:1.02rem;font-weight:300}
+    .photo{
+      width:210px;height:210px;object-fit:cover;border-radius:50%;
+      border:5px solid #fff;margin-top:26px;
+      box-shadow:0 10px 25px rgba(0,0,0,.25);
+    }
+    .hero-actions{
+      display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px;
+    }
+    .btn{
+      display:inline-block;text-decoration:none;font-weight:600;
+      padding:12px 18px;border-radius:9px;
+      transition:transform .15s ease,background .15s ease;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:#fff;color:var(--navy)}
+    .btn-secondary{border:1px solid rgba(255,255,255,.7);color:#fff}
+    .btn-contact{background:var(--teal);color:#fff}
+    .btn-contact:hover{background:var(--teal-dark)}
+
+    nav{
+      background:#fff;border-bottom:1px solid #e9edf2;
+      position:sticky;top:0;z-index:20;
+    }
+    nav ul{
+      max-width:1100px;margin:auto;padding:10px 20px;
+      list-style:none;display:flex;justify-content:center;gap:18px;flex-wrap:wrap;
+    }
+    nav a{text-decoration:none;color:var(--navy);font-weight:500;font-size:.94rem}
+    nav a:hover{text-decoration:underline}
+
+    .container{width:90%;max-width:1100px;margin:auto;padding:32px 0}
+    .card{
+      background:#fff;padding:30px;margin-bottom:25px;
+      border-radius:15px;box-shadow:var(--shadow);
+    }
+    h2{color:var(--navy);margin-bottom:18px;font-size:1.65rem}
+    h3{color:var(--navy);margin-bottom:10px}
+    h4{margin:16px 0 8px}
+    p+p{margin-top:14px}
+    ul{margin-left:25px}
+    .lead{font-size:1.06rem}
+    .muted{color:var(--muted)}
+    .grid{
+      display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;
+    }
+    .mini-card{
+      background:var(--soft);border-radius:12px;padding:20px;
+    }
+    .mini-card h3{font-size:1.08rem}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .tag{
+      background:var(--soft-green);color:#175e56;border-radius:999px;
+      padding:6px 11px;font-size:.9rem;
+    }
+
+    .table-wrap{overflow-x:auto}
+    table{width:100%;border-collapse:collapse;margin-top:15px}
+    th,td{padding:12px;border-bottom:1px solid #ddd;text-align:left;vertical-align:top}
+    th{background:var(--soft)}
+    .fiscal-box{
+      margin-top:25px;background:var(--soft-green);padding:20px;
+      border-left:6px solid var(--teal);border-radius:12px;
+    }
+    .notice{
+      margin-top:18px;padding:15px;border-radius:10px;background:#fff8e8;
+      font-size:.92rem;
+    }
+
+
+    .reviews-grid{
+      display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;
+      margin-top:18px;
+    }
+    .review{
+      background:var(--soft);border-radius:12px;padding:20px;
+      border-left:4px solid var(--teal);
+    }
+    .review-stars{letter-spacing:2px;margin-bottom:8px;color:#8a6500}
+    .review-text{font-style:italic}
+    .review-author{margin-top:12px;font-weight:600;color:var(--navy)}
+    .review-context{font-size:.9rem;color:var(--muted);font-weight:400}
+
+    .contact-grid{
+      display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start;
+    }
+    .contact-list{list-style:none;margin:0}
+    .contact-list li{margin-bottom:12px}
+    .contact-list a{color:var(--navy);font-weight:600}
+    address{font-style:normal}
+
+    footer{
+      background:var(--navy);color:#fff;text-align:center;
+      padding:28px 20px;margin-top:40px;
+    }
+    footer a{color:#fff}
+
+    @media(max-width:768px){
+      body::before{font-size:70px}
+      .photo{width:165px;height:165px}
+      .container{width:92%}
+      .card{padding:22px}
+      .grid,.reviews-grid,.contact-grid{grid-template-columns:1fr}
+      nav{position:static}
+      nav ul{gap:10px 15px}
+    }
+  </style>
+</head>
+
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<header>
+  <img src="logo.png"
+     alt="Maths Valence - Cours particuliers de mathématiques"
+     class="logo-img"
+     width="140"
+     height="140">
+  <h1>Clément Péalat</h1>
+  <p class="hero-title">Cours particuliers de mathématiques à Valence et ses environs</p>
+
+  <div class="subtitle">
+    Professeur agrégé de mathématiques<br>
+    Docteur en Mathématiques et Informatique<br>
+    Ingénieur diplômé de l'École Centrale de Lille
+  </div>
+
+  <img src="photo.jpg" alt="Portrait de Clément Péalat, professeur agrégé de mathématiques" class="photo" width="210" height="210">
+
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="tel:+33676356112">📞 06 76 35 61 12</a>
+    <a class="btn btn-secondary" href="mailto:clement.pealat@gmail.com?subject=Demande%20de%20cours%20de%20math%C3%A9matiques">✉️ Me contacter</a>
+  </div>
+</header>
+
+<nav aria-label="Navigation principale">
+  <ul>
+    <li><a href="#presentation">Présentation</a></li>
+    <li><a href="#cours">Cours</a></li>
+    <li><a href="#zone">Zone</a></li>
+    <li><a href="#tarifs">Tarifs</a></li>
+    <li><a href="#parcours">Parcours</a></li>
+    <li><a href="#avis">Avis</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="contenu" class="container">
+
+  <section class="card" id="presentation">
+    <h2>Professeur particulier de mathématiques</h2>
+    <p class="lead">
+      Je propose des <strong>cours particuliers de mathématiques du collège au supérieur</strong>,
+      à Étoile-sur-Rhône, Valence et dans les communes alentour, ainsi qu'en visioconférence.
+    </p>
+    <p>
+      Les mathématiques ne sont pas une matière qui se résume à apprendre des formules par cœur.
+      Mon objectif est d'aider chaque élève à comprendre les concepts en profondeur afin de devenir
+      autonome et capable de retrouver les raisonnements et méthodes par lui-même.
+    </p>
+    <p>
+      J'accorde une place centrale aux exercices, à la réflexion et à la compréhension.
+      Chaque élève possède sa propre manière d'apprendre ; j'adapte donc mes explications
+      et je n'hésite pas à changer complètement d'angle d'approche lorsqu'une notion pose difficulté.
+    </p>
+    <p>
+      Au-delà de la progression scolaire, je cherche à redonner confiance aux élèves
+      et à leur montrer qu'ils sont capables de progresser en mathématiques.
+    </p>
+  </section>
+
+  <section class="card" id="cours">
+    <h2>Cours adaptés à chaque niveau</h2>
+    <div class="grid">
+      <div class="mini-card">
+        <h3>Collège & lycée</h3>
+        <p>Compréhension du cours, méthodes, exercices, préparation des contrôles et consolidation des bases.</p>
+      </div>
+      <div class="mini-card">
+        <h3>Études supérieures</h3>
+        <p>Licence, classes préparatoires, BTS, BUT, écoles d'ingénieurs et autres formations scientifiques.</p>
+      </div>
+      <div class="mini-card">
+        <h3>Remise à niveau</h3>
+        <p>Reprendre les notions fragiles, identifier les blocages et construire des méthodes de travail plus solides.</p>
+      </div>
+      <div class="mini-card">
+        <h3>À domicile ou à distance</h3>
+        <p>Cours à mon domicile, au domicile de l'élève selon la zone de déplacement, ou en visioconférence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="zone">
+    <h2>Cours de maths à Valence, Étoile-sur-Rhône et alentours</h2>
+    <p>
+      Basé à <strong>Étoile-sur-Rhône</strong>, je peux proposer des cours dans le secteur de
+      <strong>Valence, Étoile-sur-Rhône, Portes-lès-Valence, Beauvallon et Livron-sur-Drôme</strong>,
+      selon les possibilités de déplacement.
+    </p>
+    <p>
+      Les cours en visioconférence sont également possibles, sans contrainte géographique.
+    </p>
+    <div class="tags" aria-label="Secteurs desservis">
+      <span class="tag">Étoile-sur-Rhône</span>
+      <span class="tag">Valence</span>
+      <span class="tag">Portes-lès-Valence</span>
+      <span class="tag">Beauvallon</span>
+      <span class="tag">Livron-sur-Drôme</span>
+      <span class="tag">Visioconférence</span>
+    </div>
+  </section>
+
+  <section class="card" id="tarifs">
+    <h2>Tarifs des cours particuliers</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Formule</th>
+            <th scope="col">Tarif</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cours à mon domicile</td>
+            <td><strong>30 €/h</strong></td>
+          </tr>
+          <tr>
+            <td>Cours en visioconférence</td>
+            <td><strong>30 €/h</strong></td>
+          </tr>
+          <tr>
+            <td>Cours au domicile de l'élève</td>
+            <td><strong>40 €/h</strong></td>
+          </tr>
+          <tr>
+            <td>Niveau supérieur (Licence, Prépa, BTS, BUT, école d'ingénieur…)</td>
+            <td><strong>+5 €/h</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:20px">
+      <strong>Modes de paiement :</strong> espèces, virement bancaire et CESU+.
+    </p>
+
+    <div class="fiscal-box">
+      <h3>💡 CESU+ et crédit d'impôt</h3>
+      <p>Les cours dispensés au domicile de l'élève peuvent être déclarés via le dispositif CESU+.</p>
+      <p>
+        Lorsque les conditions légales sont réunies, les services à la personne peuvent ouvrir droit
+        à un crédit d'impôt de 50 %, dans les limites prévues par la réglementation.
+      </p>
+
+      <h4>Exemples indicatifs</h4>
+      <ul>
+        <li><strong>40 €/h → 20 €/h après crédit d'impôt*</strong></li>
+        <li><strong>45 €/h → 22,50 €/h après crédit d'impôt*</strong></li>
+      </ul>
+      <p class="muted" style="font-size:.9rem;margin-top:10px">
+        * Sous réserve d'éligibilité et dans les limites prévues par la réglementation.
+      </p>
+    </div>
+  </section>
+
+  <section class="card" id="parcours">
+    <h2>Mon parcours</h2>
+    <p>
+      Après une classe préparatoire scientifique au lycée du Parc à Lyon, j'ai intégré
+      l'École Centrale de Lille, où j'ai obtenu mon diplôme d'ingénieur. J'ai ensuite réalisé
+      un doctorat en Mathématiques et Informatique à l'INSA Lyon avant d'obtenir
+      l'Agrégation de Mathématiques.
+    </p>
+
+    <h3 style="margin-top:22px">CV résumé</h3>
+    <ul>
+      <li>Agrégation de Mathématiques (2023).</li>
+      <li>Doctorat Mathématiques-Informatique à l'INSA Lyon (2022).</li>
+      <li>Diplôme d'ingénieur de l'École Centrale de Lille.</li>
+      <li>Expérience d'enseignement à l'Université Claude Bernard Lyon 1 : TD d'analyse et TP Python.</li>
+      <li>Expérience d'enseignement de Java à l'INSA Lyon.</li>
+      <li>Expérience d'interrogateur en classes préparatoires aux Chartreux, aux Lazaristes et au lycée du Parc.</li>
+      <li>Travaux de recherche en intelligence artificielle, machine learning, clustering et géométrie riemannienne.</li>
+      <li>Deux années d'enseignement en collège.</li>
+    </ul>
+  </section>
+
+
+  <section class="card" id="avis">
+    <h2>Avis des élèves et des familles</h2>
+
+
+    <!--
+      POUR AJOUTER UN AVIS :
+      1) Copiez tout le bloc <article class="review"> ... </article>.
+      2) Collez-le à la suite dans <div class="reviews-grid">.
+      3) Remplacez le texte, le prénom/initiale et le contexte.
+      4) N'ajoutez que des témoignages réels, avec l'accord de la personne si elle est identifiable.
+    -->
+
+    <div class="reviews-grid">
+      <article class="review">
+        <div class="review-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+        <p class="review-text">« Nous avons fait appel à M.Péalat pour notre fils qui éprouvait quelques difficultés en mathématiques en 3ème. Dès les premières évaluations, les résultats ont été à la hauteur. Notre fils a fini par atteindre la note de 17/20 au brevet, nous sommes ravis et ne manqueront pas de faire à nouveau appel à ses services. »</p>
+        <p class="review-author">Simon <span class="review-context">— niveau 3ème, préparation au brevet pendant 1 an</span></p>
+      </article>
+
+      <article class="review">
+        <div class="review-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+        <p class="review-text">« Un élève de terminale STI2D pour préparer le bac en 5 mois. 13/20 obtenu à l'épreuve de mathématiques et physique »</p>
+        <p class="review-author"></span></p>
+      </article>
+    </div>
+
+
+
+  <section class="card" id="contact">
+    <h2>Me contacter pour un cours de mathématiques</h2>
+    <div class="contact-grid">
+      <div>
+        <p>
+          Pour discuter du niveau de l'élève, de ses objectifs, de ses difficultés et des créneaux possibles,
+          vous pouvez me joindre directement par téléphone ou par e-mail.
+        </p>
+        <div style="margin-top:20px">
+          <a class="btn btn-contact" href="mailto:clement.pealat@gmail.com?subject=Demande%20de%20cours%20de%20math%C3%A9matiques">Envoyer un e-mail</a>
+        </div>
+      </div>
+
+      <address>
+        <ul class="contact-list">
+          <li>📧 <a href="mailto:clement.pealat@gmail.com">clement.pealat@gmail.com</a></li>
+          <li>📱 <a href="tel:+33676356112">06 76 35 61 12</a></li>
+          <li>📍 Étoile-sur-Rhône, Drôme</li>
+        </ul>
+      </address>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>∞ Clément Péalat — Cours particuliers de mathématiques</p>
+  <p style="margin-top:5px;font-size:.9rem">Étoile-sur-Rhône • Valence • alentours • visioconférence</p>
+</footer>
+</body>
+</html>
